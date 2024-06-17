@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'wgm_app_auth.apps.WgmAppAuthConfig'
 ]
 
 MIDDLEWARE = [
@@ -99,75 +100,6 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
-CLASS_CHOICES = {
-    'Demon Knight': {
-        'BD': 'Blood',
-        'FRT': 'Frost',
-        'UH': 'Unholy'
-    },
-    'Demon Hunter': {
-        'HC': 'Havoc',
-        'VG': 'Vengeance'
-    },
-    'Druid': {
-        'BC': 'Balance',
-        'FER': 'Feral',
-        'GD': 'Guardian',
-        'RS': 'Restoration'
-    },
-    'Evoker': {
-        'AG': 'Augmentation',
-        'DST': 'Devastation',
-        'PS': 'Preservation'
-    },
-    'Hunter': {
-        'BM': 'Beast Mastery',
-        'MS': 'Marksmanship',
-        'SV': 'Survival'
-    },
-    'Mage': {
-        'AC': 'Arcane',
-        'FR': 'Fire',
-        'FST': 'Frost'
-    },
-    'Monk': {
-        'BW': 'Brewmaster',
-        'MW': 'Mistweaver',
-        'WW': 'Windwalker'
-    },
-    'Paladin': {
-        'HL': 'Holy',
-        'PT': 'Protection',
-        'RT': 'Retribution'
-    },
-    'Priest': {
-        'DS': 'Discipline',
-        'HL': 'Holy',
-        'SHD': 'Shadow'
-    },
-    'Rogue': {
-        'AS': 'Assassination',
-        'OW': 'Outlaw',
-        'SB': 'Subtlety'
-    },
-    'Shaman': {
-        'EL': 'Elemental',
-        'EH': 'Enhancement',
-        'RST': 'Restoration'
-    },
-    'Warlock': {
-        'AF': 'Affliction',
-        'DL': 'Demonology',
-        'DSR': 'Destruction'
-    },
-    'Warrior': {
-        'AM': 'Arms',
-        'FRY': 'Fury',
-        'PTN': 'Protection'
-    }
-}
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
