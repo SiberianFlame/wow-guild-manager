@@ -110,4 +110,8 @@ class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, verbose_name='user', related_name='profile')
     email = models.CharField(max_length=100, verbose_name='email')
     nickname = models.CharField(max_length=20, verbose_name='nickname', unique=True)
-    char_class = models.CharField(max_length=20, choices=get_class_choices())
+    char_class = models.CharField(max_length=20, choices=get_class_choices(), verbose_name='class')
+
+    class Meta:
+        verbose_name = 'profile'
+        verbose_name_plural = 'profiles'

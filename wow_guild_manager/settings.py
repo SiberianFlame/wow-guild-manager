@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'wgm_app_auth.apps.WgmAppAuthConfig'
+    'wgm_app_auth.apps.WgmAppAuthConfig',
+    'wgm_app_events.apps.WgmAppEventsConfig',
 ]
 
 MIDDLEWARE = [
