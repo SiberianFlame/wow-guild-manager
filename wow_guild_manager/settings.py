@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'wgm_app_auth.apps.WgmAppAuthConfig',
     'wgm_app_events.apps.WgmAppEventsConfig',
+    'wgm_app_guild.apps.WgmAppGuildConfig',
 ]
 
 MIDDLEWARE = [
@@ -119,6 +120,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
+MEDIA_URL = 'media/'
+MEDIA_ROOT = BASE_DIR / 'uploads'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

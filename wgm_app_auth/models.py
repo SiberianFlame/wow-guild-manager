@@ -112,6 +112,9 @@ class UserProfile(models.Model):
     nickname = models.CharField(max_length=20, verbose_name='nickname', unique=True)
     char_class = models.CharField(max_length=20, choices=get_class_choices(), verbose_name='class')
 
+    def __str__(self):
+        return f'{self.nickname}'
+
     class Meta:
         verbose_name = 'profile'
         verbose_name_plural = 'profiles'
